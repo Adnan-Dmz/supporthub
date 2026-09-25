@@ -1,0 +1,14 @@
+.div-app{
+    width: 100%;
+   min-height: 100vh;
+   margin: 0;
+}
+.layout{
+    display: flex;
+   flex-direction: row;
+   align-items: center;
+}
+.Routes{
+   flex: 1;
+   height: calc(100vh - 200px);
+}
