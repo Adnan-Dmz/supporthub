@@ -32,7 +32,7 @@ function AppContact() {
   const { showsidebar } = useContext(StateSidebar)
   return (
     <div className='div-app'>
-      <BrowserRouter basename='/sopporthun/'>
+      <BrowserRouter basename='/supporthub/'>
         <Nav />
         <div className='layout'>
           <Sidebar />
