@@ -1,9 +1,14 @@
 import { FaTicketAlt, FaUsers, FaCog, FaThLarge } from "react-icons/fa";
 import "../componentcss/Sidebar.css"
 import { Link } from "react-router-dom";
-const Sidebar = ({issidebar}) => {
+import { useContext } from "react";
+import {StateSidebar} from "../context/contextstatesidebare"
+import {StateSetting} from "../context/contextsetting"
+const Sidebar = () => {
+    const {showsidebar}=useContext(StateSidebar)
+    const {emailSetting,nameSetting,backgroundside,one}=useContext(StateSetting)
     return (
- <aside className={issidebar?"onsidebar":"ofsidebar"}>
+ <aside className={showsidebar?"onsidebar":"ofsidebar"}>
             <div className="div-title">
                 <h4 className="sidebar-title">
                     SUPPORTHUB
@@ -26,7 +31,7 @@ const Sidebar = ({issidebar}) => {
                     <span className="title-icon">Customers</span>
                 </Link>
 
-                <Link to='/setting'  className="link">
+                <Link to='/settings'  className="link">
                     <FaCog className="sidebar-icon"/>
                     <span className="title-icon">Setting</span>
                 </Link>
@@ -34,12 +39,18 @@ const Sidebar = ({issidebar}) => {
             </div>
              <div className="div-admin">
                 <div>
-                   <div className='admin-img'>A</div>
+                    {
+                        backgroundside? <img className="img-sidebaree" src={backgroundside}/> :
+  <div className='admin-img'>
+                    {one}
+                    </div>
+                    }
+                 
                 </div>
                 <div className="p-admin">
-                    <h4 className="A-D">Adnan Dami</h4>
+                    <h4 className="A-D">{nameSetting}</h4>
                     <span className="span-admin">Admin</span>
-                    <span className="gmail">adnan55dmz@gamil.com</span>
+                    <span className="gmail">{emailSetting}</span>
                 </div>
             </div>
         </aside>

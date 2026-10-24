@@ -1,0 +1,253 @@
+.div-tableticket{
+display: flex;
+background-color: #ffffff;
+border: 1px solid #E2E8F0;
+width: 90%;
+overflow: auto;
+max-height: 480px;
+border-radius: 10px;
+margin-top: 45px;
+}
+.divmother-tabelticket{
+    flex-direction: column;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.tableticket{
+    width: 100%;
+    border-collapse: collapse;
+}
+thead th{
+  border-bottom: 1px solid #F1F5F9;
+  height: 50px;
+  color: #475569;
+  font-size: 14px;
+  font-weight: 650;
+}
+tbody td{
+  height: 50px;
+   border-bottom: 1px solid #F1F5F9;
+   color: #1E293B;
+   font-size: 14px;
+   font-weight: 500;
+}
+.div-selects{
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  flex-direction: row;
+  margin-top: 20px;
+}
+.selectt{
+  width: 64px;
+  height: 21px;
+  border-radius: 3px;
+  background-color: #ffffff;
+  border: solid 1px #d1d5db;
+}
+.div-select{
+width: 100%;
+}
+.div-widthselect{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+}
+.div-selectchangeticket{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  overflow: auto;
+  border: 1px solid #E2E8F0;
+  margin: 25px 0;
+  background-color: #ffffff;
+  border-radius: 10px;
+  gap: 13px;
+  box-shadow: 0 4px 6px -1px rgba(0,0,0, 0.2)
+}
+.div-customerchangeTicket{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 15px;
+}
+.div-statuschangeTicket{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.div-messagechangeTcket{
+  display: flex;
+  justify-content: center;
+}
+.div-routticket{
+ background-color: #F8FAFC;
+}
+.div-routticketOnselect{
+  height: 830px;
+}
+.div-tableticketOnselect{
+  margin-top: 0;
+max-height: 400px;
+}
+.select-changeticket{
+  width: 80px;
+  border-radius: 7px;
+  height: 19px;
+  background-color: #ffffff;
+  color: #1E293B;
+  border: solid 1px #CBD5E1;
+}
+.p-messagee{
+  border: solid 1px;
+  margin: 0 8px;
+  border-radius: 3px;
+  background-color: #F8FAFC;
+  border: 1px solid #E2E8F0;
+}
+.btn-closechanheticket{
+  margin-bottom: 8px;
+  background-color: #FEF2F2;
+  border: 1px solid #FCA5A5;
+ color: #DC2626;
+}
+.p-name{
+  color: #0F172A;
+  font-weight: 700;
+}
+.p-email{
+  color: #64748B;
+  font-size: 14px;
+}
+.p-date{
+  color: #475569;
+}
+.chanhedateticket{
+  background-color: #F8fAFC;
+  color: #0F172A;
+  text-align: center;
+  border: 1px solid #CBD5E1;
+  border-radius: 3px;
+  height: 18px;
+}
+.btn-chanhedateticket{
+  background-color: #2563EB;
+  color: #ffffff;
+  border: none;
+  width: 65px;
+  height: 22px;
+  border-radius: 2px;
+}
+.lable-chanheticket{
+ color:  #64748B;
+ font-size: 13px;
+ font-weight: 600;
+}
+.lable-message{
+  color: #475569;
+}
+.green{
+   padding: 0px 6px 2px 6px;
+  border-radius: 8px;
+  background-color: #dcfce7;
+  color: #15803d;
+}
+.textcenter{
+  min-width: 90px;
+}
+.blue{
+  color: #0369a1;
+  background-color: #e0f2fe;
+  padding: 0px 6px 2px 6px;
+  border-radius: 8px;
+} 
+.orange{
+  padding: 0px 6px 2px 6px;
+  border-radius: 8px;
+  background-color: #c2410c; 
+  color: #ffedd5;
+}
+.red{
+   background-color: #fee2e2;
+   padding: 0px 6px 2px 6px;
+   border-radius: 8px;
+   color: #b91c1c;
+}
+.yellow{
+  background-color: #a16207;
+  color: #fef08a;
+  padding: 0px 6px 2px 6px;
+   border-radius: 8px;
+}
+.gray{
+  background-color: #f3f4f6;
+  color: #374151;
+  padding: 0px 6px 2px 6px;
+   border-radius: 8px;
+}
+.tr-ticket{
+  cursor: pointer;
+ transition: all 0.3s ease-in-out;
+}
+.tr-ticket:hover{
+  background-color: #f9fafc;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 6px -1px rgba(0, 0,0,0.1);
+  border-radius: 8px;
+}
+.lable-fillter{
+  display: none;
+  color: #6b7280;
+}
+@media(min-width:500px){
+   .selectt{
+    width: 40%;
+    max-width: 110px;
+   }
+   .div-statuschangeTicket{
+    justify-content: space-around;
+  }
+  .div-routticketOnselect{
+    height: 800px;
+  }
+  .btn-closechanheticket{
+    width: 100px;
+    height: 23px;
+  }
+  .lable-chanheticket{
+     font-size: 15px;
+  }
+  .select-changeticket{
+      width: 90px;
+  }
+}
+@media(min-width:550px){
+  .lable-fillter{
+    display: inline;
+  }
+}
+@media(min-width:685px){
+ .div-tableticketOnselect{
+  height: 300px;
+ }
+ .div-routticketOnselect{
+    height: 100%;
+  }
+   .p-messagee{
+    padding: 5px;
+  }
+}
+@media(min-width:750px){
+  .div-customerchangeTicket{
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .div-tableticketOnselect{
+  height: 345px;
+ }
+}

@@ -1,13 +1,15 @@
 
 .onsidebar{
-   width: 145px;
+   width: 142px ;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-left: 10px;
+    margin-left: 8px;
     gap: 45px;
     border-right: 1px solid #e5e7eb; 
-   min-height: calc(100vh - 80px);
+    height: calc(100vh - 80px);
+    position: fixed;
+   margin-top: 80px;
 }
 .ofsidebar{
   display: none;
@@ -17,18 +19,18 @@
   flex-direction: column;
   justify-content: center;
   text-align: left;
-  gap: 6px;
+  gap: 10px;
 }
 .link{
   display: flex;
   flex-direction: row;
   align-items: center;
-  gap: 5px;
+  gap: 4px;
   text-decoration: none;
-  padding: 6px;
+  padding: 4px;
   border-radius: 6px;
   transition: all 0.2s ease;
-  width: 85%;
+  width: 90%;
 }
 .link:hover{
   background-color: #dbeafe;
@@ -46,9 +48,8 @@
 .div-admin{
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
- margin-top: 100%;
+ margin-top: 90%;
  gap: 10px;
  border-top: 1px solid #e5e7eb;
  margin-bottom: 0;
@@ -58,17 +59,19 @@
 .gmail{
   display: none;
 }
-.admin-img{
-    background-color: purple;
-    width: 30px;
-    height: 30px;
-    border-radius: 15px;
+.admin-img{   
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
     display: flex;
     align-self: center;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-size: 15px;
+    color: #FFFFFF;
+   background-color:#3B82F6;
+   font-size: 18px;
+   font-weight: 600;
+    font-size: 20px;
    margin-top: 20px;
 }
 .p-admin{
@@ -95,13 +98,24 @@
   align-items: center;
   padding: 15px 6px;
 }
-@media(min-width:950px){
+.img-sidebaree{
+   width: 50px;
+    height: 50;
+    border-radius: 50%;
+     display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+ @media(min-width:950px){
   .onsidebar{
-    margin-left: 20px;
-    width: 14%;
-    min-height: 100vh;
+     margin-left: 15px; 
+    width: 170px;
+    margin-top: 0;
+    height: 100vh;
   }
-  .div-links{
+   .div-links{
     gap: 15px;
   }
   .title-icon{
@@ -109,9 +123,23 @@
   }
   .sidebar-icon{
     font-size: 20px;
-  }
+  } 
 }
-@media(min-width:1100px){
+ @media(min-width:1100px){
+  .admin-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+  }
+  .gmail{
+    display: block;
+  }
+   .onsidebar{
+     margin-left: 20px; 
+    width: 250px;
+    margin-top: 0;
+    height: 100vh;
+  }
    .div-links{
     gap: 18px;
   }
@@ -121,4 +149,7 @@
   .sidebar-icon{
     font-size: 22px;
   }
-}
+  .sidebar-title{
+    font-size: 22px;
+  }
+}  

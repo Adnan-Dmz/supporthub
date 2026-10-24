@@ -5,9 +5,12 @@
     align-items: center;
     height: 80px;
     background-color: #ffffff;
-    width: 94%;
+    width: 100%;
+    padding: 0 15px;
 }
 .site-header{
+    height: 80px;
+     position: fixed;
     width: 100%;
     display: flex;
     align-items: center;
@@ -75,16 +78,19 @@
     gap: 3px;
 }
 .profile-img{
-    background-color: purple;
-    width: 28px;
-    height: 28px;
-    border-radius: 14px;
+   width: 35px;
+    height: 35px;
+    border-radius: 50%;
     display: flex;
     align-self: center;
     justify-content: center;
     align-items: center;
-    color: white;
-    font-size: 12px;
+    color: #FFFFFF;
+   background-color:#3B82F6;
+   font-size: 40px;
+   font-weight: 600;
+    font-size: 18px;
+  
 }
 .title-route{
     color: #0f172a;
@@ -95,7 +101,16 @@
 .icon-MG{
     color: #94A3B8;
 }
-@media(min-width:550px){
+.img-nav{
+    width: 50px;
+    height: 50;
+    border-radius: 50%;
+     display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+ @media(min-width:550px){
    .header-center{
     display: flex;
     flex-direction: row;
@@ -104,10 +119,20 @@
  
 }
 @media(min-width:950px){
-    .site-header-Bars{
-        width: 86%;
-        margin-left: calc(14% + 20px);
+    .site-header-onsidebar{
+        width: calc(100% - 185px);
+        margin-left: 185px;
         top: 0;
-        position: absolute;
+    }
+    .site-header-ofsidebar{
+        width: 100%;
+        margin: 0;
+    }
+} 
+@media(min-width:1100px){
+    .site-header-onsidebar{
+        width: calc(100% - 270px);
+        margin-left: 270px;
+        top: 0;
     }
 }

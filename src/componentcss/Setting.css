@@ -1,0 +1,222 @@
+
+
+.div-setting{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 17px;
+    margin-top: 8px;
+      background-color: #f4f6f8;
+}
+.div-titlesetting{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+.btn-svg{
+   width: 35px;
+   display: flex;
+   border-radius: 4px 0px 0px 4px;
+   outline: none;
+   border: solid 1px #d1d5db;
+    border-right: none;
+}
+.pensvg{
+    height: 100%;
+   width: 100%;
+}
+.div-inputbtn{
+    display: flex;
+}
+.input-adminchnge{
+     border-radius: 0px 4px 4px 0px;
+     outline: none;
+     text-align: center;
+      border: solid 1px #d1d5db;
+       border-left:none ;
+       background-color:#f9fafb ;
+}
+.div-emailname{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.div-lablee{
+  display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.lable-setting{
+    text-align: right;
+    color: #374151;
+   
+}
+.hhh{
+      color: #374151;
+      font-size: 22px;
+}
+.img-nowbackground{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+}
+.div-nowbackground{
+    width: 152px;
+    height: 152px;
+    border-radius: 50%;
+   border: solid 7px #ffffff;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   color: #FFFFFF;
+   background-color:#3B82F6;
+   font-size: 80px;
+   font-weight: 700;
+}
+.div-btnsimg{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    place-items: center;
+}
+.btn-img1,.btn-img2,.btn-img3,.btn-img4,.btn-img5{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+}
+.btn-img1:hover,.btn-img2:hover,.btn-img3:hover,.btn-img4:hover,.btn-img5:hover{
+    transform: translateY(-2px) scale(1.03);
+}
+.imgg{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+.adminn-imggg{
+     flex-shrink: 0;
+     width: 72px;
+     height: 72px;
+     border-radius: 50%;
+      display: flex;
+      justify-content: center;
+     align-items: center;
+     border: solid 4px #ffffff;
+     color: #FFFFFF;
+   background-color:#3B82F6;
+   font-size: 40px;
+   font-weight: 650;
+}
+.btn-img3{
+    grid-column: 1/3;
+}
+.btn-savestate{
+    width: 180px;
+    height: 23px;
+    margin-bottom: 15px;
+    font-size: 17px;
+    background-color: #2563eb;
+    color: #ffffff;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(37,99,235, 0.2);
+    transition: background-color 0.3s ease;
+}
+.btn-savestate:hover{
+    background-color: #1d4ed8;
+}
+@media(min-width:600px){
+    .div-btnsimg{
+        grid-template-columns:1fr 1fr 1fr 1fr 1fr;
+    
+    }
+    .btn-img3{
+        grid-column:3;
+    }
+    .div-setting{
+       gap: 30px;
+    }
+    .div-setting{
+      background-color: #ffffff;
+      border-radius: 12px;
+      width: 98%;
+       margin-top: 40px;
+       box-shadow: 0 4px 6px rgba(0,0,0, 0.05)
+    }
+    .div-600{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-savestate{
+        width: 220px;
+        height: 24px;
+    }
+}
+ @media(min-width:650px){
+    .div-setting{
+       gap: 30px;
+    }
+    .div-setting{
+      width: 90%;
+       margin-top: 40px;
+       max-width: 820px;
+    }
+    .div-600{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}
+  @media(min-width:750px){
+    .div-setting{
+       gap: 35px;
+       padding: 10px;
+    }
+    .div-setting{
+       margin-top: 50px;
+    }
+    .div-emailname{
+        flex-direction: row;
+    }
+        .btn-savestate{
+        width: 300px;
+        height: 28px;
+    }
+    .input-adminchnge{
+  width: 200px;
+  height: 27px;
+}
+.btn-img1,.btn-img2,.btn-img3,.btn-img4,.btn-img5{
+    width: 100px;
+    height: 100px;
+}
+.imgg{
+    width: 100px;
+    height: 100px;
+}
+.adminn-imggg{
+     flex-shrink: 0;
+     width: 92px;
+     height: 92px;
+     border-radius: 50%;
+}
+.img-nowbackground{
+    width: 190px;
+    height: 190px;
+}
+.div-nowbackground{
+    width: 182px;
+    height: 182px;
+}
+}
+ 

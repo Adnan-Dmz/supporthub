@@ -1,0 +1,195 @@
+.div-tablecustomer{
+    overflow: auto;
+  width: 85%;
+  border: 1px solid  #E2E8F0;
+  height: 400px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.div-tablecustomerOnEdit{
+   overflow: auto;
+  width: 85%;
+  border: 1px solid  #E2E8F0;
+  height: 540px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+.div-customer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+background-color: #f4f6f8;
+    margin-top: 15px;
+}
+.table-customer{
+  width: 100%;
+  border-collapse: collapse;
+}
+.btn-editcustomer{
+    width: 55px;
+    margin: 3px;
+    background-color:#F1F5F9;
+    color: #3b82f6;
+    border: 1px solid #CBD5E1;
+}
+.btn-deletecustomet{
+    width: 55px;
+     margin: 3px;
+   background-color: #F1F5f9;
+color: #ef4444;
+   border: 1px solid #FCA5A5;
+}
+.div-SelectCustomer{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr ;
+    row-gap: 15px;
+    border-radius: 4px;
+    justify-items: center;
+}
+.divmother-SelectCustomer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.div-lableinputbtn1,.div-lableinputbtn2,.div-lableinputbtn3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    background-color: rgb(255, 242, 226);
+    width: 100%;
+    padding-bottom: 5px;
+    border-radius: 5px;
+    max-width:  160px;
+}
+.input-changecustomer{
+   width: 120px;
+   border-radius: 3px;
+}
+.div-allselect{
+    border: 1px solid  #e5e7eb;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+     padding: 15px 0;
+     gap: 10px;
+     border-radius: 8px;
+     background-color: #ffffff;
+}
+.btn-changecustomers{
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 6px;
+ color: #ffffff;
+}
+.lable-chanhecustomer{
+  color: #374151;
+}
+.div-selectDelet{
+ position: fixed;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+}
+.divchild-selectDelet{
+  background-color:rgba(255,255,255,0.9);
+ border: 1px solid #e5e7eb;
+ border-radius: 8px;
+ padding: 7px;
+ color: #991b1b;
+ display: flex;
+ flex-direction: column;
+ gap: 15px;
+ max-width: 75%;
+ font-size: 18px;
+}
+.div-btns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.btn-closenull{
+  background-color: #ffffff;
+  width: 85px;
+  border:1px solid #adbdd6 ;
+  color: #556274;
+  border-radius: 3px;
+}
+.btn-deletno{
+  width: 55px;
+  height: 20px;
+  background-color: #364151;
+  color: #f3f4f6;
+  border: none;
+  border-radius: 3px;
+}
+.btn-deletyes{
+  width: 55px;
+  height: 20px;
+  border: none;
+  border-radius: 4px;
+  background-color: #ef4444;
+  color: #ffffff;
+}
+@media(min-width:500px){
+  .div-lableinputbtn1,.div-lableinputbtn2,.div-lableinputbtn3{
+    max-width: 200px;
+  
+  }  
+  .input-changecustomer{
+    width: 150px;
+  }
+  .div-SelectCustomer{
+    padding: 25px 10px;
+  }
+}
+@media(min-width:600px){
+     .div-lableinputbtn1,.div-lableinputbtn2,.div-lableinputbtn3{
+    max-width: 300px;
+  }  
+}
+@media(min-width:700px){
+       .div-lableinputbtn1,.div-lableinputbtn2,.div-lableinputbtn3{
+     max-width: 220px;
+  }  
+  .div-SelectCustomer{
+   grid-template-columns: 1fr 1fr;
+   row-gap: 25px;
+  }
+  .div-lableinputbtn3{
+    grid-column: 1/3;
+  }
+}
+@media(min-width:800px){
+       .div-lableinputbtn1,.div-lableinputbtn2,.div-lableinputbtn3{
+     max-width: 180px;
+  }  
+  .div-SelectCustomer{
+   grid-template-columns: 1fr 1fr 1fr;
+   row-gap: 25px;
+  }
+  .div-lableinputbtn3{
+    grid-column: auto;
+  }
+   .input-changecustomer{
+    width: 120px;
+  }
+}
+@media(min-width:1000px){
+       .div-lableinputbtn1,.div-lableinputbtn2,.div-lableinputbtn3{
+     max-width: 220px;
+  }  
+   .input-changecustomer{
+    width: 140px;
+  }
+}
