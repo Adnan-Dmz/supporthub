@@ -6,25 +6,24 @@ import Customers from './routejsx/customers'
 import Settings from './routejsx/settings'
 import Sidebar from './componentjsx/sidebar'
 import Nav from './componentjsx/nav'
-import ScreenWidth from './with'
-import { useContext, useState } from 'react'
+import { useContext } from 'react'
 import { TicketContextProvider } from "./context/contextticket"
 import { StateSidebarProvider, StateSidebar } from './context/contextstatesidebare'
-import {SearchContextProvider} from "./context/SearchContext"
-import {TitleContextProvider} from "./context/contexttitleroute"
-import {StateSettingProvider} from "./context//contextsetting"
+import { SearchContextProvider } from "./context/SearchContext"
+import { TitleContextProvider } from "./context/contexttitleroute"
+import { StateSettingProvider } from "./context//contextsetting"
 const App = () => {
   return (
     <StateSettingProvider>
-    <TitleContextProvider>
-    <SearchContextProvider>
-    <StateSidebarProvider>
-      <TicketContextProvider>
-        < AppContact />
-      </TicketContextProvider>
-    </StateSidebarProvider>
-    </SearchContextProvider>
-    </TitleContextProvider>
+      <TitleContextProvider>
+        <SearchContextProvider>
+          <StateSidebarProvider>
+            <TicketContextProvider>
+              < AppContact />
+            </TicketContextProvider>
+          </StateSidebarProvider>
+        </SearchContextProvider>
+      </TitleContextProvider>
     </StateSettingProvider>
   )
 }
@@ -44,7 +43,6 @@ function AppContact() {
               <Route path='/settings' element={<Settings />} />
             </Routes>
           </div>
-          <ScreenWidth />
         </div>
       </BrowserRouter>
     </div>

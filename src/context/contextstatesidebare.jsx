@@ -1,11 +1,11 @@
 import { createContext } from "react";
 import useStatesidebar from "../custom hook/CHstatesidebar"
-export const StateSidebar=createContext(
+export const StateSidebar = createContext(
     {
-showsidebar:false,
-changesidebar:()=>{},
+        showsidebar: false,
+        changesidebar: () => { },
     }
 )
-export const StateSidebarProvider=(props)=>{
+export const StateSidebarProvider = (props) => {
     return <StateSidebar.Provider value={useStatesidebar()}>{props.children}</StateSidebar.Provider>
 }
